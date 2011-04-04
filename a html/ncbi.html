@@ -1,0 +1,83 @@
+<html>
+  <head>
+    <title>Access to NCBI data - The NCBI C++ Toolkit Book - NCBI
+    Bookshelf</title>
+  </head>
+  <body>
+    <h1>
+      <strong>
+        <pre>
+17  Access to NCBI data
+</pre>
+      </strong>
+    </h1>
+    <p>Created: January 26, 2009.</p>
+    <h2>Overview</h2>
+    <p>The overview for this chapter consists of the following
+    topics:</p>
+    <ol>
+      <li>Introduction</li>
+      <li>Chapter Outline</li>
+    </ol>
+    <h3>Introduction</h3>
+    <p>This chapter describes access to the NCBI data using the
+    NCBI C++ Toolkit.</p>
+    <h3>Chapter Outline</h3>
+    <ol>
+      <li>Object Manager: Generic API for retrieving and
+      manipulating biological sequence data</li>
+      <li>E-Utils: Access to Entrez Data</li>
+    </ol>
+    <h2>Object Manager: Generic API for retrieving and manipulating
+    biological sequence data</h2>
+    <p>Go to: 
+    <a href="http://www.ncbi.nlm.nih.gov/books/NBK7179/#page-toc-popper-0">
+    drop down menu</a></p>
+    <p>The information about Object Manager library is 
+    <a href="http://www.ncbi.nlm.nih.gov/books/n/toolkit/ch_objmgr/">
+    here</a>. 
+    </p>
+      <h2>E-Utils: Access to Entrez Data</h2>
+      <p>Go to: 
+      <a href="http://www.ncbi.nlm.nih.gov/books/NBK7179/#page-toc-popper-1">
+      drop down menu 2</a></p>
+      <h3>EUtils requests</h3>
+      <p>The base class for all requests is 
+      <a href="http://www.ncbi.nlm.nih.gov/IEB/ToolBox/CPP_DOC/lxr/ident?i=CEUtils_Request">
+      CEUtils_Request</a>. Derived request classes provide 
+      <em>Get/Set</em>methods to specify arguments for each
+      request. The returned data can be read in several ways:</p>
+      <ol>
+        <li>
+        <strong>Read()</strong>- reads the data returned by the
+        server into a string.</li>
+        <li>
+        <strong>GetStream()</strong>- allows to read plain data
+        returned by the server.</li>
+        <li>
+        <strong>GetObjectStream()</strong>- returns serial stream
+        for reading data (in most cases it's an XML stream).</li>
+      </ol>
+      <h3>Connection context</h3>
+      <p>
+      <a href="http://www.ncbi.nlm.nih.gov/IEB/ToolBox/CPP_DOC/lxr/ident?i=CEUtils_ConnContext">
+      CEUtils_ConnContext</a>allows transferring EUtils context
+      from one request to another. It includes user-provided
+      information (tool, email) and history data (WebEnv,
+      query_key). If no context is provided for a request (the 
+      <em>ctx</em>argument is 
+      <em>NULL</em>), a temporary context will be created while
+      executing this request.</p>
+      <h3>EUtils objects</h3>
+      <p>Most requests return specific data types described in
+      EUtils DTDs. The C++ classes generated from the DTDs can be
+      found in 
+      <a href="http://www.ncbi.nlm.nih.gov/IEB/ToolBox/CPP_DOC/lxr/source/include/objtools/eutils">
+      include/objtools/eutils/</a>
+      <em>[util-name].</em></p>
+	  <h3>Sample application</h3>
+	  <p>An example of using EUtils API can be found in <a href="http://www.ncbi.nlm.nih.gov/IEB/ToolBox/CPP_DOC/lxr/source/src/sample/app/eutils/eutils_sample.cpp">sample/app/eutils/eutils_sample.cpp</a>.</p>
+    <p><a href="http://www.ncbi.nlm.nih.gov/books/about/copyright/">Coypright notice.</a></p>
+
+  </body>
+</html>

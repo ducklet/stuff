@@ -1,0 +1,57 @@
+From HTML4 DTD (Document type definition... defines all HTML documents)
+http://www.w3.org/TR/html4/sgml/dtd.html
+
+Standard attributes - (coreattrs)
+    id - document-wide unique id
+    class - space separated list of classes
+    style - inline css
+    title - element title ("advisory")
+
+events (don't use)
+    onclick, on*
+
+
+special elements
+    <script>, <noscript>, <link href="" type="" media="">
+    <head>, <title>, <meta>, <style>
+
+
+inline - character level elements and text strings
+block - block-like elements like paragraphs and lists
+
+Default block level elements:
+    <p>, headings, lists, preformatted, definition lists (<dl>)
+    <noscript>, <blockquote>, <form>, <hr/>, <table>, <fieldset>, <address>
+
+Everything else defaults to inline
+
+
+<address> - supposed to be used for infom on the author... but not random addresses
+
+<a> - can have attributes other than href
+    name - the name of the link
+    tabindex - the "tab order" of the item
+
+
+<map> and <area> are used for image maps.  Image maps allow links in images. They suck.
+
+Form elements:
+    <form action="" method="">
+    <label>
+    <input>
+    <select>, <optgroup>, <option>
+    <textarea>
+    <fieldset>
+    <legend>
+    <button>
+
+
+Table elements:
+    <table>
+    <tr>
+    <td>, <th>
+    <thead>, <tfoot>, <tbody>
+    <caption>
+
+
+
