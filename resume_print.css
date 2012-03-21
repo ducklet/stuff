@@ -1,0 +1,18 @@
+body {margin-left:1em;}
+.contact-info {float:none;text-align:left;width:auto;border-width:1px;border-color:black;border-style:none none solid none;}
+.contact-info h1 {font-size:2.6em;margin:.5em 0 .25em 0;line-height:1em;}
+.contact-info h2, .contact-info p, .contact-info a {display:inline;}
+.contact-info h2 {margin-right:.2em;}
+.contact-info h2, .main h2 {font-size:1.2em;}
+.main h2 span {font-size:1em;}
+.contact-info p, .contact-info a {margin-right:.6em;font-size:1.2em;}
+.contact-info p:last-child {margin-left:-.6em;}
+.contact-info a {color:black;}
+.main {margin:0;}
+.main h1 {background-color:white;color:black;margin-left:0;padding:0;text-shadow:none;-webkit-box-shadow:none;-moz-box-shadow:none;-o-box-shadow:none;box-shadow:none;margin:.75em 0 0 0;font-size:1.8em;position:static;}
+.main h1:after {content: ' ';position:absolute;width:0;height:0;left:0px;top:0;border-width:0; border-style: solid; border-color: #666 #666 transparent transparent;}
+.contact-info h1, .contact-info h2, .main h2 span {text-transform:none;}
+.main p, .main ul {font-size:1.2em;}
+.skills {width:37%;float:left;overflow:hidden;}
+.tools {width:35%;float:left;overflow:hidden;}
+.references {width:28%;float:right;}
