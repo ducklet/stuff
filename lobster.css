@@ -16,7 +16,7 @@ footer li {display:inline;margin:1.5em 3em 6em 1.85em;}
 footer li a {color:#9B0000;font-size:.8em;}
 li a {text-decoration:none;}
 nav li a {color:#ffffff;font-weight:bold;}
-nav li a, p, button.freebutton, footer li a {font-family:Arial,sans-serif;}
+nav li a, p, button.freebutton, footer li a, div.info {font-family:Arial,sans-serif;}
 nav, button.freebutton, section.red {
 background: -webkit-linear-gradient(#C00, #800); 
 background: -o-linear-gradient(#C00, #800); 
@@ -44,5 +44,23 @@ defining a change in content, which in this case I feel it does.*/
 hr {width:1px;height:36px;position:absolute;right:335px;top:25px;
 color:black;background-color:transparent;}
 
+div.info {height:120px;width:196px;background-color:white;text-align:center;
+font-weight:bold;font-size:1.4em;line-height:1.5em;
+-moz-box-shadow: 0px 0px 7px rgba(0, 0, 0, .4);
+-webkit-box-shadow: 0px 0px 7px rgba(0, 0, 0, .4);
+box-shadow: 0px 0px 7px rgba(0, 0, 0, .4);
+-moz-border-radius:1em;border-radius:1em;
+position:absolute;bottom:8em;margin-left:24em;}
 
-
+div.info:after { 
+   width: 0; 
+   height: 0;
+   border-top: 20px solid #F7F6F2;
+   border-left: 17px solid transparent; 
+   border-right: 17px solid transparent;
+   position:absolute;
+   top:99.5%;
+   left:40%;
+   content: " ";}
+   
+div.info p {color:black;position:absolute;top:50%;margin-top:-1.5em;}
