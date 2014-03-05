@@ -1,9 +1,11 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css' />
 <link href="lobster.css" rel="stylesheet" type="text/css" />
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <title>Lobster page
 </title>
 </head>
@@ -12,9 +14,10 @@
 
 <nav>
 <ul>
-<li><a href="">Nav Item</a></li>
-<li><a href="">Nav Item</a></li>
-<li><a href="">Nav Item</a></li>
+<li><a href="">Nav item</a></li>
+<li><a href="">Nav item</a></li>
+<li><a href="">Nav item</a></li>
+<hr>
 <li class="signin"><a href="">Sign In</a></li>
 </ul>
 </nav>
@@ -27,20 +30,24 @@
 <p>The "lobster information" tooltip-like thing should toggle it's display when clicking on the help image.</p>
 </div>
 <button class="freebutton" type="submit" name="Free lobster button"><strong>Free lobster button</strong></button>
-<button class="help" type="submit" name="lobster information"><img alt="help" src="help.png" /></button>
+
+<button class="help" name="lobster information"><img alt="help" src="help.png" /></button>
+
+<div class="info" style="display: none">LOBSTER INFORMATION</div>
+
 </article>
 
 <div class="row1">
-<section class="small, quarter">
+<section class="small">
 </section>
 
-<section class="small, quarter-red">
+<section class="small margin red">
 </section>
 
-<section class="small, quarter">
+<section class="small margin">
 </section>
 
-<section class="small, quarter">
+<section class="small margin">
 </section>
 </div>
 
@@ -48,18 +55,18 @@
 <section class="large">
 </section>
 
-<section class="large">
+<section class="large margin">
 </section>
 </div>
 
 <div class="row3">
-<section class="small, side">
+<section class="small">
 </section>
 
-<section class="large">
+<section class="large margin">
 </section>
 
-<section class="small, side">
+<section class="small margin">
 </section>
 </div>
 
@@ -72,6 +79,12 @@
 <li><a href="">Foot_link</a></li>
 </ul>
 </footer>
+
+<script>
+$( ".help" ).click(function() {
+$( ".info" ).toggle();
+});
+</script>
 
 </body>
 

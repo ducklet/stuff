@@ -2,30 +2,47 @@ body {font:62.5%;width:60%;margin:2em auto 0 auto;background-color:#F7F6F2;}
 h1 {font-family:'Lobster', cursive; text-align:left; font-size:2em;}
 ul {list-style-type:none;}
 li, section {float:left;}
-article {background-image:url(lobster.png); background-repeat:no-repeat; 
+article {background-image:url(lobster.png); background-repeat:no-repeat;background-size:contain; 
 background-position:top right;background-color:#ffffff;border:thin solid #D4D5CF;
-padding:1em 0 2em 2em;margin-top:.5em;}
+padding:1em 0 2em 2em;margin-top:.5em;-moz-border-radius:4px;border-radius:4px;}
 button.help {float:right;background:none;border:none;padding-right:40px;}
-div.textleft {width:45%;}
-button.freebutton {color:#ffffff;margin:.25em, 0, 0, 0;
-padding:.25em 1.5em;-moz-border-radius:1em;border-radius:1em;
+div.textleft {width:43%;}
+button.freebutton {color:#ffffff;padding:.25em 2.1em;-moz-border-radius:1em;border-radius:1em;
 border:thin solid #580000;}
 p {color:#666666;}
 nav {overflow:hidden;-moz-border-radius:4px;border-radius:4px;
-border:thin solid #580000;}
-footer li {width:20%;}
-footer li a {color:#9B0000;}
+border:thin solid #666666;}
+footer li {display:inline;margin:1.5em 3em 6em 1.85em;}
+footer li a {color:#9B0000;font-size:.8em;}
 li a {text-decoration:none;}
 nav li a {color:#ffffff;font-weight:bold;}
 nav li a, p, button.freebutton, footer li a {font-family:Arial,sans-serif;}
-nav, button.freebutton, section.quarter-red {
+nav, button.freebutton, section.red {
 background: -webkit-linear-gradient(#C00, #800); 
 background: -o-linear-gradient(#C00, #800); 
 background: -moz-linear-gradient(#C00, #800); 
 background: linear-gradient(#C00, #800);}
-section {border:thin solid #D4D5CF;}
+section {border:thin solid #D4D5CF;height:100px;width:22.84%;
+-moz-border-radius:4px;border-radius:4px;background-color:#FFF;}
+.row1, .row2, .row3 {overflow:hidden;}
 .row1 {padding-top:1em;}
 .row2, .row3 {padding-top:2em;}
+section.margin, section.red {margin-left:18px;}
+section.red {
+-moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, .6);
+-webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, .6);
+box-shadow: 2px 2px 2px rgba(0, 0, 0, .6); 
+margin-bottom:3px;border:thin solid #666666;}
+section.large {width:48.46%;}
+nav ul {margin:0;}
+nav li {display:inline;margin:.5em 4.5em .5em .5em;}
+nav li.signin {margin:.5em 1em .5em 10.5em;}
+
+/*I'm not sure if this is the cleanest way to draw the vertical line between the 
+row of links and the sign in button, but HTML5 accepts the hr element as 
+defining a change in content, which in this case I feel it does.*/
+hr {width:1px;height:36px;position:absolute;right:335px;top:25px;
+color:black;background-color:transparent;}
 
 
 
