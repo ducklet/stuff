@@ -14,8 +14,7 @@ img {border: 0;}
     margin: .25em 0 0 0;}
 .contact-info h1, .contact-info h2 {text-transform: uppercase;}
 .contact-info a {color: #00614A;}
-.contact-info a:hover {text-decoration: underline;
-    color: black;}
+.contact-info a:hover {color: black;}
 .contact-info p {margin: 0;}
 main {margin-left: 28em;
     width: 64em;}
@@ -39,7 +38,7 @@ main h1:after {content: ' ';
     border-color: #666 #666 transparent transparent;}
 main h2 {margin: 1.1em 0 .6em 0;
     font-size: 1.6em;}
-h2 span {color: #999999;
+h2 span {color: #4D4D4D;
     text-transform: uppercase;
     font-size: .75em;}
 ul {list-style: none;
